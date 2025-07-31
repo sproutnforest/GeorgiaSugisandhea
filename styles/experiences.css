@@ -1,0 +1,114 @@
+html, body{
+    background-color: #F5EED9;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+body nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 3px 0px;
+    align-items: center;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    color: #E07745;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #F5EED9;
+}
+a{
+    text-decoration: none;
+    color: #33402C;
+}
+.upperhead{
+    font-size: 100%;
+    letter-spacing: 2px;
+    font-weight: 500px;
+}
+.left{
+    padding-left: 3%;
+    flex-grow: 1;
+}
+.right{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    flex-grow: 1;
+    align-items: center;
+    padding-right: 3%;
+}
+.instagram, .whatsapp, .linkedin, .email{
+    padding: 10px;
+}
+#ig, #mail, #wa, #li {
+    filter: brightness(0)invert(50%) sepia(50%) saturate(1330%) hue-rotate(345deg) brightness(85%) contrast(80%);
+}
+.instagram:hover, .whatsapp:hover, .linkedin:hover, .email:hover{
+    padding: 8px 10px 12px 10px;
+}
+
+.scroll-container {
+  height: 200px;
+  width: 450px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  /* border: 1px solid #ccc; */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scrollbar-width: none; 
+}
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.scroll-item {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.scroll-item.active {
+  background-color: #E07745;
+  color: white;
+}
+
+.insidecontainer {
+    display: flex;
+    width: 100vw;
+    height: 80vh;
+    align-items: center;
+    justify-content:space-evenly;
+    padding: 20px;
+}
+
+.insideleft{
+    flex-grow: 2;
+    padding: 10px;
+}
+
+.insideright{
+    flex-grow: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.insideright {
+    border: 3px solid #F9A93B;
+    border-radius: 2px;
+}
+
+@media (max-width: 1000px) {
+    .insidecontainer {
+        flex-direction: column;
+    }
+}

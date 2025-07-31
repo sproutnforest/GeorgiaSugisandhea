@@ -1,0 +1,377 @@
+/*#352e28 - dark brown
+#3d5d52 - green
+#c98f61 - brown
+#a5b2ab - blue
+#d3b8a5 - light cream
+*/
+/* Dark Green: #33402C
+Cream: #F5EED9
+Mustard Yellow: #F9A93B
+Burnt Orange: #E07745
+Black: #15120E
+Soft Green: #79836A
+Green Shadow: #212a1d */
+
+html, body{
+    background-color: #F5EED9;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+body nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 3px 0px;
+    align-items: center;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    color: #E07745;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #F5EED9;
+}
+a{
+    text-decoration: none;
+    color: #33402C;
+}
+.upperhead{
+    font-size: 100%;
+    letter-spacing: 2px;
+    font-weight: 500px;
+}
+.left{
+    padding-left: 3%;
+    flex-grow: 1;
+}
+.right{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    flex-grow: 1;
+    align-items: center;
+    padding-right: 3%;
+}
+.instagram, .whatsapp, .linkedin, .email{
+    padding: 10px;
+}
+#ig, #mail, #wa, #li {
+    filter: brightness(0)invert(50%) sepia(50%) saturate(1330%) hue-rotate(345deg) brightness(85%) contrast(80%);
+}
+.instagram:hover, .whatsapp:hover, .linkedin:hover, .email:hover{
+    padding: 8px 10px 12px 10px;
+}
+#secondpic{
+    border-radius: 50%;
+    height: auto;
+    width: 400px;
+    max-width: 100%;
+    filter: brightness(1.25) contrast(-30);
+    transition: transform 0.5s linear;
+}
+#secondpic:hover{
+    transform: scale(1.026);
+}
+.about{
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    background-color: #33402C;
+    color: #F5EED9;
+}
+.aboutright{
+    text-align: center;
+    flex-grow: 1;
+    font-family: "Playfair Display", serif;
+    padding: 0px 0px 10px 17px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.aboutleft {
+    flex-grow: 1;
+    flex-shrink: 1;
+    overflow: hidden;
+    padding: 6px;
+    width: 1500px;
+}
+.rest{
+    display:flex;
+    box-shadow: 0px 0px 10px #b46a06;
+    position: relative;
+    z-index: 1;
+}
+.restleft{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0.20;
+}
+.restright{
+    background-color: #E07745;
+    flex-grow: 0.80;
+    padding: 20px 0px 0px 0px !important;
+}
+.restup{
+    display: flex;
+    background-color: #F9A93B;
+    padding: 40px 0px;
+}
+.education, .experiences{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+}
+.experiences{
+    padding-right: 20px;
+}
+#edu, #exp{
+    margin: 0px;
+    font-family: "Abril Fatface", serif;
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    color: #33402C;
+}
+.sprout{
+    font-family: "Playfair Display", serif;
+    list-style: none;
+    color: #33402C;
+}
+.sprout li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 30px;
+}
+.sprout li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    background-color: #33402C; /* The color you want to apply */
+    mask-image: url('plant.png'); /* Your transparent PNG icon */
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: url('plant.png'); /* For WebKit browsers */
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+}
+.restbottom{
+    background-color: #33402C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px 40px 20px;
+}
+#lang{
+    margin: 0px;
+    font-family: "Abril Fatface", serif;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: #E07745;
+}
+.restbottominside{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.us, .id, .kr, .ita{
+    gap: 10px;
+}
+#usa{
+    border-radius: 27%;
+}
+#usa, #idn, #kr, #ita{
+    transition: transform 0.2s linear;
+    padding: 2px;
+}
+#usa:hover, #idn:hover, #kr:hover, #ita:hover{
+    transform: scale(1.07);
+}
+.natural{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 100px 10px 0px;
+}
+.nattitle{
+    margin: 0px;
+    font-family: "Abril Fatface", serif;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    color: #F9A93B;
+}
+.natinside{
+    display: flex;
+    gap: 10px;
+    padding-top: 15px;
+    overflow: hidden;
+}
+.programming{
+    flex-grow: 1;
+    padding: 10px 0px 10px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.proginside{
+    padding-top: 10px;
+    overflow: hidden;
+}
+#prog{
+    width: 50px;
+    padding: 7px;
+    transition: transform 0.2s linear;
+}
+#prog:hover{
+    transform: scale(1.07);
+}
+.one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.restright{
+    text-align: center;
+    padding: 42px 20px;
+}
+.perstitle{
+    font-family: "Abril Fatface", serif;
+    font-size:40px;
+    letter-spacing: 1.5px;
+    color: #F9A93B;
+    padding-bottom: 45px;
+}
+.box{
+    font-family: "Playfair Display", serif;
+    color: #33402C;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 25px;
+    padding: 12px 0px;
+}
+.attributes{
+    text-align: right;
+    font-family: "Playfair Display", serif;
+    color: #E07745;
+    font-size: 10px;
+    padding: 10px 10px 0px 0px;
+}
+#moretitle{
+    margin: 0px;
+    font-family: "Abril Fatface", serif;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: #33402C;
+    text-align: center;
+}
+.more p{
+    padding: 20px 0px;
+}
+
+.moreinside{
+    display: flex;
+    flex-direction: column;
+    font-family: "Playfair Display", serif;
+}
+.moreup, .moredown{
+    display: flex;
+    width: 100vw;
+    text-align: center;
+}
+.moreupleft{
+    background-color: #E07745;
+    width: 50vw;
+    padding: 35px 30px;
+    color: #33402C;
+    font-weight: 600;
+}
+.moreupright{
+    background-color: #F9A93B;
+    width: 50vw;
+    padding: 35px 30px;
+    color: #33402C;
+    font-weight: 600;
+}
+.moredown{
+    background-color: #33402C;
+    width: 100vw;
+    padding: 35px 30px;
+    color: #F9A93B;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#moreinsidetitlem{
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    color: #33402C;
+    font-weight: 1000;
+    padding: 0px;
+    margin: 0px;
+}
+#moreinsidetitlebm{
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    color: #33402C;
+    font-weight: 1000;
+    padding: 0px;
+    margin: 0px;
+}
+#moreinsidetitlesp{
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    color: #F9A93B;
+    font-weight: 1000;
+    padding: 0px;
+    margin: 0px;
+}
+.sneakpeek a{
+    color:#F9A93B;
+}
+.linkssneakpeek{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 20px;
+}
+
+@media (max-width: 1000px) {
+    .about {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+    .aboutleft{
+        width: 100%;
+        max-width: 400px;
+    }
+    .rest {
+        flex-direction: column;
+    }
+    .restleft, .restright {
+        width: 100%;
+        padding: 10px 0;
+    }
+    .natural{
+        padding: 0px 10px 0px 0px;
+    }
+    .programming{
+        padding: 0px 0px 0px 10px;
+    }
+    .portinside{
+        flex-direction: column;
+    }
+}

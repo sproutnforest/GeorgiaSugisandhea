@@ -1,0 +1,190 @@
+/*#352e28 - dark brown
+#3d5d52 - green
+#c98f61 - brown
+#a5b2ab - blue
+#d3b8a5 - light cream
+*/
+/* Dark Green: #33402C
+Cream: #F5EED9
+Mustard Yellow: #F9A93B
+Burnt Orange: #E07745
+Black: #15120E
+Soft Green: #79836A
+Green Shadow: #212a1d */
+
+html, body{
+    background-color: #F5EED9;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+body nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 3px 0px;
+    align-items: center;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    color: #E07745;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #F5EED9;
+}
+.upperhead{
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 500px;
+}
+.left{
+    padding-left: 3%;
+    flex-grow: 1;
+}
+.right{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-end;
+    flex-grow: 1;
+    align-items: center;
+    padding-right: 3%;
+}
+.instagram, .whatsapp, .linkedin, .email{
+    padding: 10px;
+}
+#ig, #mail, #wa, #li {
+    filter: brightness(0)invert(50%) sepia(50%) saturate(1330%) hue-rotate(345deg) brightness(85%) contrast(80%);
+}
+.instagram:hover, .whatsapp:hover, .linkedin:hover, .email:hover{
+    padding: 8px 10px 12px 10px;
+}
+.namecontainer{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 87vh;
+    /* margin-top: 60px;  */
+}
+.name {
+    background-color: #33402C;
+    display: flex;
+    gap: 75px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: space-between;
+    padding: 50px 50px;
+    box-shadow: 0px 0px 20px #33402C;
+    position: relative;
+    z-index: 1;
+}
+.nameright {
+    flex-grow: 0;
+    flex-shrink: 1;
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    /* padding: 5px 75px 5px 0px; */
+    overflow: hidden;
+}
+.nameleft {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* padding: 20px 0px 20px 140px; */
+    font-size: 35px;
+    gap: 0px;
+    color: #F9A93B;
+}
+#firstpic {
+    width: 380px;
+    max-width: 100%;
+    height: auto;
+    padding: 2px 2px;
+    transition: transform 0.5s linear;
+}
+#firstpic:hover {
+    transform: scale(1.026);
+}
+#im{
+    font-family: "Playfair Display", serif;
+    font-size: 27px;
+    font-weight: 400;
+    margin: 0px;
+}
+#georgia{
+    font-family: "Abril Fatface", serif;
+    font-size: 50px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin: 0px;
+    width: 500px;
+}
+
+.btncontainer{
+    font-family: "Playfair Display", serif;
+    margin: 0px;
+    padding: 20px 10px;
+}
+
+.aboutbtn{
+    background-color: #E07745;
+    color:#33402C;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Playfair Display", serif;
+}
+
+.experiencesbtn {
+    background-color: #F9A93B;
+    color:#33402C;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Playfair Display", serif;
+}
+
+.portofoliobtn{
+    background-color: #E07745;
+    color:#33402C;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Playfair Display", serif;
+}
+
+@media (max-width: 1000px) {
+    .namecontainer {
+        padding: 80px 0px;
+    }
+    .name {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 20px;
+        margin: 0px 0px;
+        gap: 0px
+    }
+    .nameright, .nameleft {
+        width: 100%;
+        padding: 0 0;
+        justify-content: center;
+        padding: 10px 0px 10px 0px;
+    }
+    .experiencesbtn {
+        background-color: #E07745;
+    }
+
+    .portofoliobtn{
+        background-color: #F9A93B;
+    }
+}
