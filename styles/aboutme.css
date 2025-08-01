@@ -35,6 +35,10 @@ body nav{
     z-index: 2;
     background-color: #F5EED9;
 }
+body nav a{
+    text-decoration: none;
+    color: #E07745;
+}
 a{
     text-decoration: none;
     color: #33402C;

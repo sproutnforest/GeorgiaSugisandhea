@@ -28,15 +28,11 @@ function highlightCenterItem() {
     if (currentValue !== lastHighlightedValue) {
       lastHighlightedValue = currentValue;
       console.log("New highlighted item:", currentValue);
-      if(currentValue === "VICARA -  Designer & Documenter"){
-        const iframe = document.getElementById("expFrame");
-        iframe.src = "vicara.html";
-      }
-      else if(currentValue === "Bonibot - Software Engineer"){
+      if(currentValue === "Bonibot - Database & Software Engineer"){
         const iframe = document.getElementById("expFrame");
         iframe.src = "bonibot.html";
       }
-      else if(currentValue === "Edubuddy - Software Engineer"){
+      else if(currentValue === "Edubuddy - Database & Software Engineer"){
         const iframe = document.getElementById("expFrame");
         iframe.src = "edubuddy.html";
       }
@@ -48,9 +44,13 @@ function highlightCenterItem() {
         const iframe = document.getElementById("expFrame");
         iframe.src = "roombooking.html";
       }
-      else if(currentValue === "Third place adigraph poster competition - Researcher"){
+      else if(currentValue === "Kantin 88 Untar Website - Backend Developer"){
         const iframe = document.getElementById("expFrame");
-        iframe.src = "adigraph.html";
+        iframe.src = "kantin88.html";
+      }
+      else if(currentValue === "MATCHI - Backend Developer"){
+        const iframe = document.getElementById("expFrame");
+        iframe.src = "matchi.html";
       }
       else{
         const iframe = document.getElementById("expFrame");
