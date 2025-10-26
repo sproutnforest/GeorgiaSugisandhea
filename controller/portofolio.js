@@ -60,6 +60,14 @@ function highlightCenterItem() {
         const iframe = document.getElementById("expFrame");
         iframe.src = "greedyastronaut.html";
       }
+      else if(currentValue === "Obesity Level Prediction - Researcher"){
+        const iframe = document.getElementById("expFrame");
+        iframe.src = "obesity.html";
+      }
+      else if(currentValue === "Palmprint Biometric Recognition - Researcher"){
+        const iframe = document.getElementById("expFrame");
+        iframe.src = "palmprint.html";
+      }
       else{
         const iframe = document.getElementById("expFrame");
         iframe.src = "schoolwebsite.html";
