@@ -52,6 +52,14 @@ function highlightCenterItem() {
         const iframe = document.getElementById("expFrame");
         iframe.src = "matchi.html";
       }
+      else if(currentValue === "MRT Compass - Software Engineer"){
+        const iframe = document.getElementById("expFrame");
+        iframe.src = "mrtcompass.html";
+      }
+      else if(currentValue === "Greedy Astronaut - Game Developer"){
+        const iframe = document.getElementById("expFrame");
+        iframe.src = "greedyastronaut.html";
+      }
       else{
         const iframe = document.getElementById("expFrame");
         iframe.src = "schoolwebsite.html";
