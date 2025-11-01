@@ -147,6 +147,11 @@ a{
     list-style: none;
     color: #33402C;
 }
+.prog{
+    font-family: "Playfair Display", serif;
+    list-style: none;
+    color: #F9A93B;
+}
 .sprout li {
     position: relative;
     margin-bottom: 10px;
@@ -206,7 +211,7 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px 100px 10px 0px;
+    padding: 10px 70px 10px 0px;
 }
 .nattitle{
     margin: 0px;
@@ -223,7 +228,7 @@ a{
 }
 .programming{
     flex-grow: 1;
-    padding: 10px 0px 10px 120px;
+    padding: 10px 0px 10px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;

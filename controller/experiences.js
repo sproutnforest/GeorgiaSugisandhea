@@ -32,6 +32,14 @@ function highlightCenterItem() {
         const iframe = document.getElementById("expFrame");
         iframe.src = "communityservice.html";
       }
+      else if(currentValue === "Member of DPM FTI Untar Development and Administration Division"){
+        const iframe = document.getElementById("expFrame");
+        iframe.src = "dpmfti.html";
+      }
+      else if(currentValue === "Head of FTI Open House 2025"){
+        const iframe = document.getElementById("expFrame");
+        iframe.src = "oh.html";
+      }
       else if(currentValue === "Assistant for Community Service Program - Edubot13"){
         const iframe = document.getElementById("expFrame");
         iframe.src = "communityserviceedubot.html";
