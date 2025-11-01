@@ -148,9 +148,9 @@ a{
     color: #33402C;
 }
 .prog{
-    font-family: "Playfair Display", serif;
-    list-style: none;
-    color: #F9A93B;
+    font-family: "Playfair Display", serif !important;
+    list-style: none !important;
+    color: #F9A93B !important;
 }
 .sprout li {
     position: relative;
@@ -218,7 +218,7 @@ a{
     font-family: "Abril Fatface", serif;
     font-size: 25px;
     letter-spacing: 1.5px;
-    color: #F9A93B;
+    color: #F9A93B ;
 }
 .natinside{
     display: flex;
